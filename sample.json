@@ -1,0 +1,81 @@
+{
+    "intents": {
+        "GetHoroscope": [
+            {
+                "name": "Sign",
+                "type": "LIST_OF_SIGNS"
+            },
+            {
+                "name": "Date",
+                "type": "AMAZON.DATE"
+            }
+        ],
+        "MatchSign": [
+            {
+                "name": "FirstSign",
+                "type": "LIST_OF_SIGNS"
+            },
+            {
+                "name": "SecondSign",
+                "type": "LIST_OF_SIGNS"
+            }
+        ],
+        "GetLuckyNumbers": []
+    },
+    "slots": {
+        "LIST_OF_SIGNS": [
+            "Aries",
+            "Taurus",
+            "Gemini",
+            "Cancer",
+            "Leo",
+            "Pisces",
+            "Virgo",
+            "Libra",
+            "Scorpio",
+            "Sagittaruis",
+            "Capricorn",
+            "Aquarius"
+        ]
+    },
+    "utterances": {
+        "_samples": {},
+        "GetHoroscope": {
+            "samples": {
+                "TodayStarters": [
+                    "what is the horoscope for",
+                    "tell me the horoscope for",
+                    "tell me about"
+                ],
+                "FutureStarters": [
+                    "what will the horoscope for"
+                ]
+            },
+            "patterns": [
+                "[TodayStarters] {Sign}",
+                "[FutureStarters] {Sign} be on {Date}",
+                "get me my horoscope",
+                "{Sign}"
+            ]
+        },
+        "MatchSign": {
+            "samples": {
+                "Relationship": [
+                    "what is the relationship between",
+                    "tell me about the relationship between"
+                ]
+            },
+            "patterns": [
+                "do {FirstSign} and {SecondSign} get along",
+                "[Relationship] {FirstSign} and {SecondSign}"
+            ]
+        },
+        "GetLuckyNumbers": {
+            "samples": {},
+            "patterns": [
+                "what are my lucky numbers",
+                "tell me my lucky numbers"
+            ]
+        }
+    }
+}

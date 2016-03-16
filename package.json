@@ -1,0 +1,41 @@
+{
+    "name": "alexicon",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "bin": {
+        "alexicon": "index.js"
+    },
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/danielgary/alexicon.git"
+    },
+    "directories": {
+        "bin": "./"
+    },
+    "keywords": [
+        "alexa",
+        "skills",
+        "intents",
+        "utterance",
+        "generator"
+    ],
+    "author": "Daniel Gary <daniel@gatewayapps.com> (http://www.gatewayapps.com)",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/danielgary/alexicon/issues"
+    },
+    "homepage": "https://github.com/danielgary/alexicon#readme",
+    "dependencies": {
+        "fs": "0.0.2",
+        "path": "^0.12.7",
+        "shelljs": "^0.6.0",
+        "yargs": "^4.3.1"
+    },
+    "files": [
+        "index.js"
+    ]
+}
